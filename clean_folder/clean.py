@@ -109,7 +109,8 @@ def move_video_file(file, root_folder):
     new_path = video_folder / new_name
     file.rename(new_path)
 
-def main(folder_path):
+def main():
+    folder_path = Path("C:/Users/amaterasu/Desktop/clean_folder/clean_folder")
     scan.scan(folder_path)
 
     for file in scan.jpeg_files:
